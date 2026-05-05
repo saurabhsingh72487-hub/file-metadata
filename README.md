@@ -8,7 +8,6 @@ This project is built as part of the freeCodeCamp Backend Development and APIs c
 
 ## 🚀 Live Demo
 
-👉 https://your-live-url.com/
 
 ---
 
@@ -33,5 +32,4 @@ This project is built as part of the freeCodeCamp Backend Development and APIs c
 
 ---
 
-## 📂 Project Structure
 
