@@ -1,8 +1,37 @@
-# File Metadata Microservice
+# 📁 File Metadata Microservice
 
-A full-stack JavaScript app for the freeCodeCamp File Metadata Microservice project.
+A simple full-stack Node.js app that allows users to upload a file and receive its metadata (name, type, and size).
 
-## Install
+This project is built as part of the freeCodeCamp Backend Development and APIs certification.
 
-```bash
-npm install
+---
+
+## 🚀 Live Demo
+
+👉 https://your-live-url.com/
+
+---
+
+## 📦 Features
+
+- Upload any file
+- Get file metadata:
+  - File name
+  - File type (MIME)
+  - File size (bytes)
+- Simple UI
+- REST API endpoint
+
+---
+
+## 🛠️ Tech Stack
+
+- Node.js
+- Express.js
+- Multer (for file upload handling)
+- HTML + CSS
+
+---
+
+## 📂 Project Structure
+
