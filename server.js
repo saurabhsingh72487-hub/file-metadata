@@ -7,17 +7,13 @@ const app = express();
 const upload = multer({ storage: multer.memoryStorage() });
 
 app.use(cors());
-app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static("public"));
 
-app.get("/", (req, res) => {
+app.get("/", function (req, res) {
   res.sendFile(path.join(__dirname, "views", "index.html"));
 });
 
-app.post("/api/fileanalyse", upload.single("upfile"), (req, res) => {
-  if (!req.file) {
-    return res.status(400).json({ error: "No file uploaded" });
-  }
-
+app.post("/api/fileanalyse", upload.single("upfile"), function (req, res) {
   res.json({
     name: req.file.originalname,
     type: req.file.mimetype,
@@ -25,8 +21,7 @@ app.post("/api/fileanalyse", upload.single("upfile"), (req, res) => {
   });
 });
 
-const PORT = process.env.PORT || 3000;
-
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
+const port = process.env.PORT || 3000;
+app.listen(port, function () {
+  console.log("Server is running on port " + port);
 });
